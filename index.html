@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-4</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/tailwind.config.js"></script>
+</head>
+<body>
+    <!-- //////  Navbar Section  ////// -->
+    <header class="border-b border-gray-300 py-4 px-4 overflow-hidden">
+        <div class="container mx-auto flex justify-between relative">
+            <img src="./assets/media/pattern-1.png" alt="Shape-1" width="88px"
+                class="absolute right-full -top-4 ml-12"
+            />
+            <img src="./assets/media/pattern-2.png" alt="Shape-2" width="141px"
+                class="absolute left-full -top-4 ml-12"
+            />
+
+            <a href="#">
+                <img src="./assets/media/logo.png" alt="Logo" width="291px" class="ml-5"/>
+            </a>
+            <nav>
+                <ul class="flex items-center">
+                    <li>
+                        <a href="#" class="px-8 mr-10 py-3 transition rounded-2xl active 
+                         bg-gradient-to-br from-green-300 to-green-600 text-white flex md:inline-flex font-medium text-lg cursor-pointer hover:shadow-lg">
+                         Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4 mr-10 py-2 transition rounded-2xl active 
+                        text-gray-500  hover:bg-gray-200 flex md:inline-flex 
+                         font-medium text-lg cursor-pointer hover:shadow-lg">
+                         Features</a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4 mr-10 py-2 transition rounded-2xl active 
+                        text-gray-500 hover:bg-gray-200 flex md:inline-flex 
+                         font-medium text-lg cursor-pointer hover:shadow-lg">
+                         Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4 mr-10 py-2 transition rounded-2xl active 
+                        text-gray-500 hover:bg-gray-200 flex md:inline-flex 
+                         font-medium text-lg cursor-pointer hover:shadow-lg">
+                         Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-4 mr-10 py-2 transition  rounded-2xl active 
+                        text-gray-500 hover:bg-gray-200 flex md:inline-flex 
+                         font-medium text-lg cursor-pointer hover:shadow-lg">
+                         Login</a>
+                    </li>
+                    <li>
+                        <a href="#" class="px-8 py-3 transition hover:bg-gray-200 rounded-2xl active 
+                         border-t-2 border-indigo-400 bg-gradient-to-br from-purple-500 to-indigo-600
+                         hover:from-green-600 hover:via-blue-700 hover:to-purple-700 text-white flex md:inline-flex 
+                         font-medium text-lg cursor-pointer hover:shadow-lg">
+                         <img src="./assets/media/user-icon.png" class="h-6 w-6 mr-4">Free Signup</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- //////  Main Hero Section  ////// -->
+    <section class="hero py-8 md:py-24 relative">
+        <img src="./assets/media/pattern-3.png" alt="Shape-3" width="118px"
+            class="absolute right-8 top-8"
+        />
+        <div class="container mx-auto items-center relative text-center">
+            <h1 class="text-4xl md:text-7xl font-medium relative text-transparent 
+            bg-clip-text bg-gradient-to-r from-green-400 to-purple-400 
+            block text-center">Use <span class="font-bold">AI</span> to write code, 
+            blogs & more</h1>
+            <p class="md:text-2xl text-gray-500 text-center max-w-3xl mx-auto mt-4">
+                Enhance everything you do by using the latest from OpenAI 
+                to solve problems, write solutions and make life easier.
+            </p>
+            <a href="#" class="px-4 py-3 md:px-10 md:py-5 transition hover:bg-gray-200 rounded-2xl active 
+                border-t-2 border-green-400 bg-gradient-to-br from-green-500 to-blue-600
+                hover:from-green-600 hover:via-blue-700 hover:to-purple-700 text-white inline-flex items-center
+                font-medium md:text-2xl cursor-pointer hover:shadow-lg mt-4">Get Started
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 ml-4" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- //////  Bottom Hero Section  ////// -->
+    <section class="relative py-4 z-50">
+        <div class="container mx-auto">
+            <div class="rounded-xl border flex divide-x bg-gray-50" style="box-shadow: 0px 0px 4em rgba(0,0,0,0.25);">
+                <div class="p-8 flex-1">
+                    <div class="flex">
+                        <img src="./assets/media/msg-icon.png" alt="Text MSG Icon"
+                        class="h-12 w-12 mr-4"/>
+                        <h2 class="text-4xl font-medium">
+                            Explain Code
+                        </h2>
+                    </div>
+                    <p class="text-gray-600 text-lg">
+                        Explain some code based on the syntax provided
+                    </p>
+                    <h3 class="mt-6 text-lg font-bold">
+                        Paste your code below:
+                    </h3>
+                    <div class="bg-gray-200 p-8 rounded-md mt-2 h-48 text-2xl">
+                        <code>
+                            <span class="text-purple-500">function</span> <span class="text-red-500">HelloWorld</span>(text){ <br>
+                                echo text || <span class="text-green-500">"Hello World"</span>;  <br>
+                            }
+                        </code>
+                    </div>
+                    <a href="#" class=" mt-8 px-8 py-4 transition hover:bg-gray-200 rounded-2xl active 
+                        bg-gradient-to-br from-purple-500 to-indigo-600
+                        hover:from-green-600 hover:via-blue-700 hover:to-purple-700 text-white flex md:inline-flex 
+                        font-medium text-lg cursor-pointer hover:shadow-lg">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4">
+                            <path d="M9.33335 18.6667H7.00002C6.38118 18.6667 5.78769 18.4208 5.3501 17.9832C4.91252 17.5457 4.66669 16.9522 4.66669 16.3333V7C4.66669 6.38116 4.91252 5.78767 5.3501 5.35008C5.78769 4.9125 6.38118 4.66666 7.00002 4.66666H16.3334C16.9522 4.66666 17.5457 4.9125 17.9833 5.35008C18.4209 5.78767 18.6667 6.38116 18.6667 7V9.33333L9.33335 18.6667ZM11.6667 23.3333H21C21.6189 23.3333 22.2123 23.0875 22.6499 22.6499C23.0875 22.2123 23.3334 21.6188 23.3334 21V11.6667C23.3334 11.0478 23.0875 10.4543 22.6499 10.0167C22.2123 9.57916 21.6189 9.33333 21 9.33333H11.6667C11.0478 9.33333 10.4544 9.57916 10.0168 10.0167C9.57919 10.4543 9.33335 11.0478 9.33335 11.6667V21C9.33335 21.6188 9.57919 22.2123 10.0168 22.6499C10.4544 23.0875 11.0478 23.3333 11.6667 23.3333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                            Enhance with AI
+                    </a>
+                </div>
+                <div class="p-8 flex-1">
+                    <div class="flex items-center">
+                        <div class="inline-flex 
+                        items-center justify-center h-12 w-12 
+                        rounded-full bg-gray-700 sm:mx-0 sm:h-10 
+                        sm:w-10 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </div>
+                        <h2 class="text-4xl font-medium ml-4">
+                            What does this code do?
+                        </h2>
+                    </div>
+                    <p class="text-gray-600 text-lg">
+                        The following code does:
+                    </p>
+                    <div class="divide-y mt-4">
+                        <div class="flex items-center py-4">
+                            <div class="inline-flex 
+                                items-center justify-center h-8 w-8 
+                                rounded-full bg-gray-200 sm:mx-0 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </div>
+                            <h2 class="text-xl ml-4">
+                                The code above is a function definition.
+                            </h2>
+                        </div>
+                        <div class="flex items-center py-4">
+                            <div class="inline-flex 
+                                items-center justify-center h-8 w-8 
+                                rounded-full bg-gray-200 sm:mx-0 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </div>
+                            <h2 class="text-xl ml-4">
+                                It defines a new function called `HelloWorld` that takes a single argument called `text`
+                            </h2>
+                        </div>
+                        <div class="flex items-center py-4">
+                            <div class="inline-flex 
+                                items-center justify-center h-8 w-8 
+                                rounded-full bg-gray-200 sm:mx-0 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </div>
+                            <h2 class="text-xl ml-4">
+                                The body of the function is a single line of code that prints out the value of `text` if it is defined, or `Hello World` if it is not defined.
+                            </h2>
+                        </div>
+                    </div>
+                    <a href="#" class="mt-8 px-6 py-4 transition rounded-md active 
+                       bg-gray-100 hover:bg-gray-200 flex md:inline-flex font-medium text-lg cursor-pointer hover:shadow-lg">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4">
+                            <path d="M9.33335 18.6667H7.00002C6.38118 18.6667 5.78769 18.4208 5.3501 17.9832C4.91252 17.5457 4.66669 16.9522 4.66669 16.3333V7C4.66669 6.38116 4.91252 5.78767 5.3501 5.35008C5.78769 4.9125 6.38118 4.66666 7.00002 4.66666H16.3334C16.9522 4.66666 17.5457 4.9125 17.9833 5.35008C18.4209 5.78767 18.6667 6.38116 18.6667 7V9.33333L9.33335 18.6667ZM11.6667 23.3333H21C21.6189 23.3333 22.2123 23.0875 22.6499 22.6499C23.0875 22.2123 23.3334 21.6188 23.3334 21V11.6667C23.3334 11.0478 23.0875 10.4543 22.6499 10.0167C22.2123 9.57916 21.6189 9.33333 21 9.33333H11.6667C11.0478 9.33333 10.4544 9.57916 10.0168 10.0167C9.57919 10.4543 9.33335 11.0478 9.33335 11.6667V21C9.33335 21.6188 9.57919 22.2123 10.0168 22.6499C10.4544 23.0875 11.0478 23.3333 11.6667 23.3333Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Copy Output
+                    </a>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+
+    <!-- //////  Bottom Purple background Section  ////// -->
+    <section class="bg-gradient-to-r from-purple-600 to-indigo-700 -mt-48 pt-48
+    relative">
+        <img src="./assets/media/pattern-4.png" alt="Shape-4" width="300px" class="absolute left-0 -top-64"/>
+        <div class="container h-48 mx-auto">
+            <div class="flex justify-between items-center">
+                <a href="#" class="mt-4 px-8 py-4 transition rounded-2xl active 
+                    bg-white text-purple-600 text-xl flex md:inline-flex 
+                    font-medium cursor-pointer hover:shadow-lg">
+                    <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2">
+                        <path d="M8 15H18H8ZM8 19H12H8ZM13 27L9 23H6C5.46957 23 4.96086 22.7893 4.58579 22.4142C4.21071 22.0391 4 21.5304 4 21V13C4 12.4696 4.21071 11.9609 4.58579 11.5858C4.96086 11.2107 5.46957 11 6 11H20C20.5304 11 21.0391 11.2107 21.4142 11.5858C21.7893 11.9609 22 12.4696 22 13V21C22 21.5304 21.7893 22.0391 21.4142 22.4142C21.0391 22.7893 20.5304 23 20 23H17L13 27Z" stroke="#381BCB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Explain Code
+                </a>
+                <a href="#" class="mt-4 mr-6 px-8 py-4 transition rounded-2xl active 
+                    bg-purple-400 text-purple-800 hover:bg-purple-200 text-xl flex md:inline-flex 
+                    font-medium cursor-pointer hover:shadow-lg">
+                    <img src="./assets/media/regex-icon.png" alt="Regular Expression" class="h-8 w-8 mr-2">
+                    Regex
+                </a>
+                <a href="#" class="mt-4 px-8 py-4 transition rounded-2xl active 
+                  bg-purple-400 text-purple-800 hover:bg-purple-200  text-xl flex md:inline-flex 
+                    font-medium cursor-pointer hover:shadow-lg">
+                    <img src="./assets/media/cross-aero-icon.png" alt="Convert Code" class="h-6 w-6 mr-2">
+                    Convert Code
+                </a>
+                <a href="#" class="mt-4 px-8 py-4 transition rounded-2xl active 
+                  bg-purple-400 text-purple-800 hover:bg-purple-200 text-xl flex md:inline-flex 
+                    font-medium cursor-pointer hover:shadow-lg">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2">
+                        <path d="M13.232 3.232L16.768 6.768L13.232 3.232ZM14.732 1.732C15.2009 1.2631 15.8369 0.999671 16.5 0.999671C17.1631 0.999671 17.7991 1.2631 18.268 1.732C18.7369 2.2009 19.0003 2.83687 19.0003 3.5C19.0003 4.16313 18.7369 4.7991 18.268 5.268L4.5 19.036H1V15.464L14.732 1.732V1.732Z" stroke="#381BCB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Fix Grammar
+                </a>
+                <a href="#" class="mr-6 mt-4 px-8 py-4 transition rounded-2xl active 
+                bg-purple-400 text-purple-800 hover:bg-purple-200 text-xl flex md:inline-flex 
+                    font-medium cursor-pointer hover:shadow-lg">
+                    <svg viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2">
+                        <path d="M5 14H5.01M5 3H3C2.46957 3 1.96086 3.21071 1.58579 3.58579C1.21071 3.96086 1 6.46957 1 5V17C1 17.5304 1.21071 18.0391 1.58579 18.4142C1.96086 18.7893 2.46957 19 3 19H13C13.5304 19 14.0391 18.7893 14.4142 18.4142C14.7893 18.0391 15 17.5304 15 17V5C15 4.46957 14.7893 3.96086 14.4142 3.58579C14.0391 3.21071 13.5304 3 13 3H11H5ZM5 3C5 3.53043 5.21071 4.03914 5.58579 4.41421C5.96086 4.78929 6.46957 5 7 5H9C9.53043 5 10.0391 4.78929 10.4142 4.41421C10.7893 4.03914 11 3.53043 11 3H5ZM5 3C5 2.46957 5.21071 1.96086 5.58579 1.58579C5.96086 1.21071 6.46957 1 7 1H9C9.53043 1 10.0391 1.21071 10.4142 1.58579C10.7893 1.96086 11 2.46957 11 3H5ZM8 10H11H8ZM8 14H11H8ZM5 10H5.01H5Z" stroke="#381BCB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>    
+                    Todo
+                </a>
+                <img src="./assets/media/OpenAI-Logo.png" alt="OpenAI Logo" class="h-10 mt-4">
+            </div>
+        </div>
+        <div class="section-2">
+            <img src="./assets/media/pattern-6.png" alt="Shape-3" width="224.21px"
+                class="absolute right-8 top-96"
+            />
+            <div class="container mx-auto items-center relative text-center">
+                <a href="#" class="mb-28 px-4 py-3 md:px-10 md:py-5 transition hover:bg-gray-200 rounded-2xl active 
+                bg-white text-purple-600 inline-flex items-center
+                    font-medium md:text-2xl cursor-pointer hover:shadow-lg mt-4">
+                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2">
+                        <path d="M22.7755 11.3877V15.1836V11.3877ZM22.7755 15.1836V18.9796V15.1836ZM22.7755 15.1836H26.5714H22.7755ZM22.7755 15.1836H18.9796H22.7755ZM16.449 8.85711C16.449 10.1994 15.9157 11.4868 14.9666 12.4359C14.0174 13.3851 12.7301 13.9183 11.3878 13.9183C10.0454 13.9183 8.75809 13.3851 7.80892 12.4359C6.85976 11.4868 6.32653 10.1994 6.32653 8.85711C6.32653 7.51479 6.85976 6.22744 7.80892 5.27828C8.75809 4.32912 10.0454 3.79588 11.3878 3.79588C12.7301 3.79588 14.0174 4.32912 14.9666 5.27828C15.9157 6.22744 16.449 7.51479 16.449 8.85711V8.85711ZM3.79591 25.3061C3.79591 23.2926 4.59577 21.3616 6.01951 19.9378C7.44326 18.5141 9.37427 17.7143 11.3878 17.7143C13.4012 17.7143 15.3322 18.5141 16.756 19.9378C18.1797 21.3616 18.9796 23.2926 18.9796 25.3061V26.5714H3.79591V25.3061Z" stroke="#381BCB" stroke-width="2.53061" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>Get Started
+                </a>
+                <h1 class="text-4xl md:text-7xl font-medium relative text-transparent 
+                bg-clip-text bg-gradient-to-r from-green-400 to-yellow-400 
+                block text-center">Use the latest <span class="font-bold">AI</span> features</h1>
+                <p class="md:text-2xl text-white text-center max-w-3xl mx-auto mt-4">
+                    Start enhancing a range of tasks using AI, from writing emails, code, or blogs, to rephrasing paragraph’s you just want to reword!
+                </p>
+            </div>
+        </div>
+            <img src="./assets/media/pattern-5.png" alt="Shape-3" width="224.21px"
+                class="absolute left-8 bottom-80"
+            />
+            <div class="container mx-auto">
+                <div class="container flex flex-row mx-auto my-10 px-1">
+                    <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-2xl shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mx-auto" style="box-shadow: 0px 0px 4em rgba(0,0,0,1.25)">
+                        <img class="object-cover w-full h-96 rounded-t-lg h-46 md:h-auto md:w-28 md:rounded-none md:rounded-s-lg" src="./assets/media/msg-icon.png" alt="Text MSG Icon">
+                        <div class="flex flex-col justify-between p-4 leading-normal">
+                            <p>Content</p>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Explain Code</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Explain some code based on the syntax provided</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-2xl shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mx-auto" style="box-shadow: 0px 0px 4em rgba(0,0,0,1.25)">
+                        <img class="object-cover w-full h-96 rounded-t-lg h-46 md:h-auto md:w-28 md:rounded-none md:rounded-s-lg" src="./assets/media/msg-icon.png" alt="Text MSG Icon">
+                        <div class="flex flex-col justify-between p-4 leading-normal">
+                            <p>Content</p>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Explain Code</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Explain some code based on the syntax provided</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="container  flex flex-row mx-auto my-10 px-1">
+                    <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-2xl shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mx-auto" style="box-shadow: 0px 0px 4em rgba(0,0,0,1.25)";>
+                        <img class="object-cover w-full h-96 rounded-t-lg h-46 md:h-auto md:w-28 md:rounded-none md:rounded-s-lg" src="./assets/media/msg-icon.png" alt="Text MSG Icon">
+                        <div class="flex flex-col justify-between p-4 leading-normal">
+                            <p>Content</p>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Explain Code</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Explain some code based on the syntax provided</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-2xl shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mx-auto" style="box-shadow: 0px 0px 4em rgba(0,0,0,1.25)">
+                        <img class="object-cover w-full h-96 rounded-t-lg h-46 md:h-auto md:w-28 md:rounded-none md:rounded-s-lg" src="./assets/media/msg-icon.png" alt="Text MSG Icon">
+                        <div class="flex flex-col justify-between p-4 leading-normal">
+                            <p>Content</p>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Explain Code</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Explain some code based on the syntax provided</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="container flex flex-row mx-auto px-1">
+                    <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-2xl shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mx-auto" style="box-shadow: 0px 0px 4em rgba(0,0,0,1.25)">
+                        <img class="object-cover w-full h-96 rounded-t-lg h-46 md:h-auto md:w-28 md:rounded-none md:rounded-s-lg" src="./assets/media/msg-icon.png" alt="Text MSG Icon">
+                        <div class="flex flex-col justify-between p-4 leading-normal">
+                            <p>Content</p>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Explain Code</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Explain some code based on the syntax provided</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-2xl shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mx-auto" style="box-shadow: 0px 0px 4em rgba(0,0,0,1.25)">
+                        <img class="object-cover w-full h-96 rounded-t-lg h-46 md:h-auto md:w-28 md:rounded-none md:rounded-s-lg" src="./assets/media/msg-icon.png" alt="Text MSG Icon">
+                        <div class="flex flex-col justify-between p-4 leading-normal">
+                            <p>Content</p>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Explain Code</h5>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Explain some code based on the syntax provided</p>
+                        </div>
+                    </a>
+                </div>    
+            </div>
+        </div>
+    </section>
+</body>
+</html>
